@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vazco-cache-v22';
+const CACHE_NAME = 'vazco-cache-v23';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -17,6 +17,10 @@ const ASSETS_TO_CACHE = [
   './assets/vazco/soudeur.png',
   './assets/vazco/chaudronnier.png',
   './assets/Animations Vazco/Dessinateur.webp',
+  './assets/Animations Vazco/Secretaire.webp',
+  './assets/Animations Vazco/Soudeur.webp',
+  './assets/Animations Vazco/chaudronnier.webp',
+  './assets/Animations Vazco/mise_en_forme.webp',
   
   // Icônes SVG
   './assets/icons/chevron_btn_left.svg',
