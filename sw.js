@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vazco-cache-v29';
+const CACHE_NAME = 'vazco-cache-v31';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

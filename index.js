@@ -70,7 +70,7 @@ const APP_TEXTS = {
       story: "Chut... Écoutez ce calme. Installez-vous, mais faîtes attention à ne pas marcher sur mes plans ! Nous voilà au bureau d'études, au dernier étage. Je suis Jean-Pierre, dessinateur industriel.",
       story2: "Face à moi, ma table à dessin inclinée et une feuille blanche. C’est ici que les navires géants naissent, bien avant de toucher l'eau de la Loire. Approchez-vous de ma table… ",
       story3: "Créée par les chantiers de la Loire, la « crèche » formait des jeunes dessinateurs et dessinatrices pour l’ensemble de la construction navale française. Premier au concours d’entrée, je dessinais mal, mais je savais calculer. C’est pour cela que Dubigeon m’a embauché.",
-      tip: "Maintenant que vous avez écouté le témoignage de Jean-Pierre, je vous invite à aller voir la deuxième partie de l’exposition au fond de la salle pour découvrir les objets qu’il utilisait !",
+      tip: "Maintenant que vous avez écouté le témoignage de Jean-Pierre, je vous invite à aller voir la deuxième partie de l’exposition au fond de la salle pour découvrir les objets qu’il utilisait ! Et même s'installer à son poste de travail",
       backgroundImage: "assets/metiers/dessinateur.jpg"
     },
     secretaire: {
@@ -703,6 +703,19 @@ document.addEventListener('DOMContentLoaded', () => {
   let touchStartY = 0;
   const SWIPE_THRESHOLD = 50; // pixels minimum pour déclencher le swipe
 
+  // Déterminer si le swipe est autorisé entre deux slides (pour isoler les expériences)
+  function isSwipeAllowed(from, to) {
+    if (isNaN(to)) return false;
+    const groups = [
+      [0, 1, 2, 3, 4, 5, 6, 7], // Introduction historique & transition
+      [9, 10, 11, 12],          // Dessinateur
+      [13, 14, 15, 16],         // Secrétaire
+      [17, 18, 19, 20],         // Soudeur
+      [21, 22, 23, 24]          // Chaudronnier
+    ];
+    return groups.some(group => group.includes(from) && group.includes(to));
+  }
+
   appViewport.addEventListener('touchstart', (e) => {
     touchStartX = e.changedTouches[0].screenX;
     touchStartY = e.changedTouches[0].screenY;
@@ -723,13 +736,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // Geste vers la gauche (Swipe gauche) -> Écran suivant
         const nextBtn = activeSlideEl.querySelector('.next-arrow, #btn-vazco-next, #btn-start');
         if (nextBtn && !nextBtn.disabled && nextBtn.style.display !== 'none' && nextBtn.style.opacity !== '0') {
-          nextBtn.click();
+          const target = parseInt(nextBtn.getAttribute('data-target'));
+          if (isSwipeAllowed(currentSlide, target)) {
+            nextBtn.click();
+          }
         }
       } else {
         // Geste vers la droite (Swipe droite) -> Écran précédent
         const prevBtn = activeSlideEl.querySelector('.prev-arrow, .btn-back, #btn-back-vazco-intro, #btn-back-vazco-meta');
         if (prevBtn && !prevBtn.disabled && prevBtn.style.display !== 'none' && prevBtn.style.opacity !== '0') {
-          prevBtn.click();
+          const target = parseInt(prevBtn.getAttribute('data-target'));
+          if (isSwipeAllowed(currentSlide, target)) {
+            prevBtn.click();
+          }
         }
       }
     }
