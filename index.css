@@ -119,6 +119,10 @@ body {
   transform: translateX(calc(-100% * var(--active-slide, 0)));
 }
 
+.slides-wrapper.no-transition {
+  transition: none !important;
+}
+
 .slide {
   flex: 0 0 100%;
   width: 100%;

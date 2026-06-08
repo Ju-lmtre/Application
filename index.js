@@ -39,7 +39,7 @@ const APP_TEXTS = {
       image: "assets/photographies/Mais en ces années 75-80.png"
     },
     {
-      text: "Un jour, ni tout à fait liquide, ni tout à fait solide, une silhouette est née de la vase. Comme si le chantier avait sécrété, sans le vouloir, sa propre mémoire vivante. C’est comme cela qu’est apparu Vazco. Ce petit personnage incarne tout ce que la Navale a fabriqué... au-delà des bateaux.\n\nEt parce qu'il s'est nourri de ces traces, il sait tout. Il a vibré au rythme de chaque outil, de chaque geste. Aujourd'hui, alors que les chantiers s'éveillent à une nouvelle vie, Vazco remonte à la surface. Pas pour eﬀrayer les passants, non. Pour témoigner. Pour vous montrer que bâtir un géant des mers n’est pas l’aﬀaire d’un seul homme, mais d'une incroyable chaîne de savoir-faire.",
+      text: "C’est comme cela qu’est apparu Vazco. Ce petit personnage incarne tout ce que la Navale a fabriqué... au-delà des bateaux.\n\nEt parce qu'il s'est nourri de ces traces, il sait tout. Il a vibré au rythme de chaque outil, de chaque geste. Aujourd'hui, alors que les chantiers s'éveillent à une nouvelle vie, Vazco remonte à la surface. Pas pour eﬀrayer les passants, non. Pour témoigner. Pour vous montrer que bâtir un géant des mers n’est pas l’aﬀaire d’un seul homme, mais d'une incroyable chaîne de savoir-faire.",
       image: "assets/photographies/C’est comme cela qu’est apparu Vazco.png"
     }
   ],
@@ -434,8 +434,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (transitionType === 'fade') {
       appViewport.classList.add('fade-out');
       setTimeout(() => {
+        slidesWrapper.classList.add('no-transition'); // Désactiver la transition
         currentSlide = index;
         slidesWrapper.style.setProperty('--active-slide', currentSlide);
+
+        // Forcer le reflow du navigateur pour appliquer le transform immédiatement
+        void slidesWrapper.offsetWidth;
+
+        slidesWrapper.classList.remove('no-transition'); // Réactiver la transition pour les swipes/flèches
+
         playAudioForSlide(currentSlide);
         appViewport.classList.remove('fade-out');
         appViewport.classList.add('fade-in');
