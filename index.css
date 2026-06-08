@@ -372,11 +372,13 @@ body {
 /* =========================================================
    MASCOTTES & FLOATING ANIMATION
    ========================================================= */
-.central-mascot-container {
+.central-mascot-container,
+.visual-column {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .mascot-group-img {
@@ -385,7 +387,13 @@ body {
   object-fit: contain;
 }
 
-.big-mascot,
+.big-mascot {
+  max-width: 100%;
+  width: clamp(200px, 35vw, 420px);
+  max-height: 70vh;
+  object-fit: contain;
+}
+
 .meta-mascot,
 .menu-mascot {
   max-width: 85%;
@@ -439,7 +447,8 @@ body {
   padding: clamp(1.5rem, 3.5vh, 3rem) clamp(2rem, 4vw, 3.5rem);
   border-radius: 30px;
   box-shadow: 0 12px 40px rgba(82, 73, 62, 0.15);
-  max-width: min(820px, calc(100vw - 320px)); /* Sécurisation flèches de navigation */
+  max-width: min(820px, calc(100vw - 320px));
+  /* Sécurisation flèches de navigation */
   width: 90%;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -468,9 +477,11 @@ body {
 }
 
 #slide-7 .metier-mascot {
-  width: clamp(200px, 30vw, 400px) !important;
+  width: clamp(250px, 35vw, 450px) !important;
   min-width: 0 !important;
-  max-height: 45vh !important;
+  max-height: 85vh !important;
+  object-fit: cover !important;
+  object-position: center !important;
 }
 
 /* Forcer la réactivité de la bulle sur le slide 7 (Flaque) malgré le style inline */
@@ -666,7 +677,8 @@ body {
   z-index: auto;
   /* Permet aux enfants de se mélanger (mix-blend-mode) avec l'arrière-plan du slide */
   position: absolute;
-  width: calc(100% - 300px); /* Laisse 150px de marge à gauche/droite pour flèches */
+  width: calc(100% - 300px);
+  /* Laisse 150px de marge à gauche/droite pour flèches */
   max-width: 1200px;
   left: 50%;
   transform: translateX(-50%);
@@ -676,17 +688,18 @@ body {
 /* Positionnement absolute spécifique à l'écran de transition flaque (slide 7) */
 .meta-vazco-slide .metier-dialog-container {
   position: absolute;
-  bottom: clamp(50px, 8vh, 80px);
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 280px);
+  transform: translate(-50%, -50%);
+  width: calc(100% - 320px);
 }
 
 .metier-mascot {
-  width: clamp(140px, 20vw, 240px);
-  height: auto;
-  max-height: 42vh;
-  object-fit: contain;
+  width: clamp(150px, 22vw, 240px);
+  height: clamp(240px, 50vh, 380px);
+  max-height: 65vh;
+  object-fit: cover;
+  object-position: center;
   z-index: 5;
   flex-shrink: 0;
   margin-bottom: 0;
