@@ -571,7 +571,7 @@ body {
   background-color: transparent;
   color: var(--color-text);
   font-family: var(--font-body);
-  font-size: clamp(1.2rem, 2.2vh, 1.8rem) !important;
+  font-size: 28px !important;
   font-weight: 500;
   padding: 0 clamp(1rem, 2vw, 2rem);
   display: flex;

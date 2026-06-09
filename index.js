@@ -24,23 +24,23 @@ const APP_TEXTS = {
   // Écran 2 à 6 : Carrousel d'Introduction Historique (5 slides)
   carousel: [
     {
-      text: "<strong>Bienvenue à la Maison des Hommes et des Techniques</strong>. Ce lieu que vous visitez aujourd'hui a été créé en 1994 par les anciens travailleurs des chantiers navals eux-mêmes, portés par des années de réflexion et d'engagement pour sauvegarder leur histoire. Vous vous apprêtez à découvrir l'exposition permanente <strong>Bâtisseurs de navires</strong>, installée au cœur même des anciens bureaux administratifs de l'entreprise Dubigeon.\n\nC'est ici, entre ces murs, que battait le cœur stratégique du chantier...",
+      text: "<strong style='font-style: italic;'>Bienvenue à la Maison des Hommes et des Techniques</strong>. Ce lieu que vous visitez aujourd'hui a été créé en <strong style='font-style: italic;'>1994</strong> par les anciens travailleurs des chantiers navals eux-mêmes, portés par des années de réflexion et d'engagement pour <strong style='font-style: italic;'>sauvegarder leur histoire</strong>. Vous vous apprêtez à découvrir l'exposition permanente <strong style='font-style: italic;'>Bâtisseurs de navires</strong>, installée au cœur même des anciens bureaux administratifs de l'entreprise Dubigeon.\n\nC'est ici, entre ces murs, que battait le cœur stratégique du chantier...",
       image: "assets/photographies/Bienvenue.png"
     },
     {
-      text: "<strong>Nantes, fin des années 70.</strong> Si vous tendez l’oreille, la ville ne sonne pas du tout comme aujourd’hui. À cette époque, le cœur de Nantes bat au rythme de l’acier. Un battement lourd, puissant, qui résonne de la place du Commerce jusqu’aux ruelles de Chantenay.",
+      text: "<strong style='font-style: italic;'>Nantes, fin des années 70.</strong> Si vous tendez l’oreille, la ville ne sonne pas du tout comme aujourd’hui. À cette époque, <strong style='font-style: italic;'>le cœur de Nantes bat au rythme de l’acier.</strong> Un battement lourd, puissant, qui résonne de la place du Commerce jusqu’aux ruelles de Chantenay.",
       image: "assets/photographies/Nantes, fin des années 70.png"
     },
     {
-      text: "Ici, sur l’île, le paysage est dominé par des monstres de métal : les célèbres grues des chantiers navals. Chaque matin, des milliers d’ouvriers en bleu de travail franchissent les grilles. Une marée humaine qui, depuis des générations, fait vibrer les familles nantaises, les commerces et les bistrots du coin.\n\nDans les cales, on donne naissance à des navires de toutes sortes : des cargos, des paquebots, des dragues ou des sous-marins. La fierté est immense, chacun contribue à sa manière avec tout autant d’importance.",
+      text: "Ici, sur l’île, le paysage est dominé par des monstres de métal : <strong style='font-style: italic;'>les célèbres grues des chantiers navals.</strong> Chaque matin, <strong style='font-style: italic;'>des milliers d’ouvriers en bleu de travail </strong>franchissent les grilles. Une marée humaine qui, depuis des générations, fait vibrer les familles nantaises, les commerces et les bistrots du coin.\n\nDans les cales, on donne naissance à des navires de toutes sortes : <strong style='font-style: italic;'>des cargos, des paquebots, des dragues ou des sous-marins.</strong> La fierté est immense, chacun contribue à sa manière avec tout autant d’importance.",
       image: "assets/photographies/Ici, sur l’île.png"
     },
     {
-      text: "Mais en ces années 75-80, l'ambiance change. Le ciel s’assombrit. On parle de crise mondiale, de restructurations, de menaces de fermeture. Alors, dans les ateliers, la solidarité se resserre. On lutte, on crie, on espère. Le chantier, ce n'est pas juste un travail, c’est notre vie…\n\nPendant des décennies, la Loire a déposé ses boues contre les cales. Les ouvriers, eux, y ont laissé tomber des cordages usés, des éclats d'acier ou encore des gouttes d'huile de moteur. Les pluies ont brassé tout ça dans un fossé oublié, là où personne ne regardait vraiment.",
+      text: "<strong style='font-style: italic;'>Mais en ces années 75-80, l'ambiance change.</strong> Le ciel s’assombrit. On parle de crise mondiale, de restructurations, de menaces de fermeture. Alors, dans les ateliers, la solidarité se resserre. On lutte, on crie, on espère. Le chantier, <strong style='font-style: italic;'>ce n'est pas juste un travail, c’est notre vie…\n\n</strong> Pendant des décennies, la Loire a déposé ses boues contre les cales. Les ouvriers, eux, y ont laissé tomber des cordages usés, des éclats d'acier ou encore des gouttes d'huile de moteur. Les pluies ont brassé tout ça dans un fossé oublié, là où personne ne regardait vraiment.",
       image: "assets/photographies/Mais en ces années 75-80.png"
     },
     {
-      text: "C’est comme cela qu’est apparu Vazco. Ce petit personnage incarne tout ce que la Navale a fabriqué... au-delà des bateaux.\n\nEt parce qu'il s'est nourri de ces traces, il sait tout. Il a vibré au rythme de chaque outil, de chaque geste. Aujourd'hui, alors que les chantiers s'éveillent à une nouvelle vie, Vazco remonte à la surface. Pas pour eﬀrayer les passants, non. Pour témoigner. Pour vous montrer que bâtir un géant des mers n’est pas l’aﬀaire d’un seul homme, mais d'une incroyable chaîne de savoir-faire.",
+      text: "C’est comme cela qu’est apparu <strong style='font-style: italic;'>Vazco.</strong> Ce petit personnage incarne tout ce que la Navale a fabriqué... au-delà des bateaux.\n\nEt parce qu'il s'est nourri de ces traces, <strong style='font-style: italic;'>il sait tout.</strong> Il a vibré au rythme de chaque outil, de chaque geste. Aujourd'hui, alors que les chantiers s'éveillent à une nouvelle vie, Vazco remonte à la surface. Pas pour eﬀrayer les passants, non. Pour témoigner. Pour vous montrer que bâtir <strong style='font-style: italic;'>un géant des mers</strong> n’est pas l’aﬀaire d’un seul homme, mais d'une <strong style='font-style: italic;'>incroyable chaîne de savoir-faire.",
       image: "assets/photographies/C’est comme cela qu’est apparu Vazco.png"
     }
   ],
@@ -54,8 +54,8 @@ const APP_TEXTS = {
 
   // Écran 8 : Transition Métamorphose
   vazcoMeta: {
-    paragraph1: "Regardez, c'est plus fort que moi : dès que je pense à un métier, mon corps se métamorphose. Les souvenirs des anciens employés se réveillent en moi, leurs gestes me reviennent par cœur, et leur fierté me colle à la peau.",
-    paragraph2: "Pour faire naître ces navires, il fallait une véritable armée d'artisans. Ouvrez grand vos oreilles, je change de peau pour vous raconter leurs histoires. Vous êtes prêts ?",
+    paragraph1: "Regardez, c'est plus fort que moi : dès que je pense à un métier, mon corps se métamorphose. <strong style='font-style: italic;'>Les souvenirs des anciens employés se réveillent en moi, leurs gestes me reviennent par cœur, et leur fierté me colle à la peau.</strong>",
+    paragraph2: "Pour faire naître ces navires, il fallait une véritable armée d'artisans. <strong style='font-style: italic;'>Ouvrez grand vos oreilles, je change de peau pour vous raconter leurs histoires. Vous êtes prêts ?</strong>",
     button: "Suivant"
   },
 
@@ -68,17 +68,17 @@ const APP_TEXTS = {
   // Écrans des métiers individuels (9 à 24)
   trades: {
     dessinateur: {
-      story: "Chut... Écoutez ce calme. Installez-vous, mais faîtes attention à ne pas marcher sur mes plans ! Nous voilà au bureau d'études, au dernier étage. Je suis Jean-Pierre, dessinateur industriel.",
-      story2: "Face à moi, ma table à dessin inclinée et une feuille blanche. C’est ici que les navires géants naissent, bien avant de toucher l'eau de la Loire. Approchez-vous de ma table… ",
-      story3: "Créée par les chantiers de la Loire, la « crèche » formait des jeunes dessinateurs et dessinatrices pour l’ensemble de la construction navale française. Premier au concours d’entrée, je dessinais mal, mais je savais calculer. C’est pour cela que Dubigeon m’a embauché.",
-      tip: "Maintenant que vous avez écouté le témoignage de Jean-Pierre, je vous invite à aller voir la deuxième partie de l’exposition au fond de la salle pour découvrir les objets qu’il utilisait ! Et même s'installer à son poste de travail",
+      story: "Chut... Écoutez ce calme. Installez-vous, mais faîtes attention à ne pas marcher sur mes plans ! Nous voilà au bureau d'études, au dernier étage. <strong style='font-style: italic;'>Je suis Jean-Pierre, dessinateur industriel.</strong>",
+      story2: "Face à moi, <strong style='font-style: italic;'>ma table à dessin inclinée et une feuille blanche.</strong> C’est ici que les navires géants naissent, bien avant de toucher l'eau de la Loire. Approchez-vous de ma table…",
+      story3: "Créée par les chantiers de la Loire, <strong style='font-style: italic;'>la « crèche » formait des jeunes dessinateurs et dessinatrices pour l’ensemble de la construction navale française.</strong> Premier au concours d’entrée, je dessinais mal, mais je savais calculer. C’est pour cela que Dubigeon m’a embauché.",
+      tip: "Maintenant que vous avez écouté le témoignage de Jean-Pierre, je vous invite à aller voir la deuxième partie de l’exposition au fond de la salle pour découvrir les objets qu’il utilisait ! Et même <strong style='font-style: italic;'>s'installer à son poste de travail !</strong>",
       backgroundImage: "assets/metiers/dessinateur.jpg"
     },
     secretaire: {
-      story: "Chantiers Dubigeon, bonjour ? Oui, je vous passe le bureau d’études. Ah, les bureaux... On oublie souvent que sans la paperasse, aucun bateau ne quitte Nantes ! Je suis Christianne, secrétaire, je m’occupe des commandes d'acier, des fiches de paie, des plannings de livraison… Et au-delà de mon métier, je mène une vie d’engagée depuis très jeune.",
-      story2: "Le syndicat, ça fait partie de ma vie. Au début du 20e siècle, les syndicats étaient uniquement masculin. Mais petit à petit, à partir de 1920, les femmes ont commencé à les intégrer, notamment le syndicat des dames employées du commerce et de l’industrie.",
-      story3: "Nous, les femmes du pole dactylographique étions en minorité, c’était quand même un milieu d’hommes, mais cela ne nous a pas empêché de nous engager et faire entendre nos revendications. Pour les grèves de 1977, nous nous sommes même regroupées en un collectif d’épouses et travailleuses des chantiers, afin de soutenir le mouvement de nos époux. Nous pouvons donc affirmer avec fierté que les femmes ont eu un rôle important dans l’histoire sociale des chantiers.",
-      tip: "Maintenant que vous en savez un peu plus sur l’histoire de Christianne, je vous invite à aller voir le reste de l’exposition dans la zone où vous êtes actuellement. Vous en apprendrez encore plus sur le travail et la vie au chantier !",
+      story: "Chantiers Dubigeon, bonjour ? Oui, je vous passe le bureau d’études. Ah, les bureaux... On oublie souvent que sans la paperasse, aucun bateau ne quitte Nantes ! <strong style='font-style: italic;'>Je suis Christianne, secrétaire</strong>, je m’occupe des <strong style='font-style: italic;'>commandes d'acier, des fiches de paie, des plannings de livraison…</strong> Et au-delà de mon métier, je mène une vie d’engagée depuis très jeune.",
+      story2: "Le syndicat, ça fait partie de ma vie. Au début du 20e siècle, les syndicats étaient uniquement masculin. Mais petit à petit, à partir de 1920, les femmes ont commencé à les intégrer, notamment <strong style='font-style: italic;'>le syndicat des dames employées du commerce et de l’industrie.</strong>",
+      story3: "Nous, <strong style='font-style: italic;'>les femmes du pole dactylographique</strong> étions en minorité, c’était quand même un milieu d’hommes, mais cela ne nous a pas empêché de nous engager et faire entendre nos revendications. Pour les grèves de 1977, nous nous sommes même regroupées en un<strong style='font-style: italic;'>collectif d’épouses et travailleuses des chantiers</strong>, afin de soutenir le mouvement de nos époux. Nous pouvons donc affirmer avec fierté que les femmes ont eu un rôle important dans l’histoire sociale des chantiers.",
+      tip: "Maintenant que vous en savez un peu plus sur l’histoire de Christianne, <strong style='font-style: italic;'>je vous invite à aller voir le reste de l’exposition dans la zone où vous êtes actuellement.</strong>Vous en apprendrez encore plus sur le travail et la vie au chantier !",
       backgroundImage: "assets/metiers/secretaire.jpg"
     },
     soudeur: {
@@ -89,18 +89,18 @@ const APP_TEXTS = {
       backgroundImage: "assets/metiers/soudeur.jpg"
     },
     chaudronnier: {
-      story: "Écoutez ce boucan dans lequel on travaille... Je suis Michel, chaudronnier. C'est moi qui cogne sur l'acier pour lui donner sa forme. Posez vos mains sur la pièce de métal avec moi, sentez comme ça vibre...",
-      story2: "Au chantier, tout était une question de précision. On travaillait le métal, mais surtout, on travaillait en équipe. Chacun avait son rôle, et il fallait que tout s’imbrique parfaitement. Le bruit était constant. Les marteaux, les machines, les coques en construction…",
-      story3: "On s’y habituait. C’était notre environnement. On apprenait sur le tas, avec les anciens. Ils nous montraient les gestes, ils corrigeaient, ils transmettaient. C’est comme ça que le métier se perpétuait. Aujourd’hui, je me dis que ce savoir là, c’était une richesse. Pas seulement technique, mais humaine.",
-      tip: "Maintenant que vous avez écouté le témoignage de Michel, je vous invite à aller voir la deuxième partie de l’exposition au fond de la salle pour découvrir les objets qu’il utilisait et vivre une expérience audio autour de ceux-ci !",
+      story: "Écoutez ce boucan dans lequel on travaille... <strong style='font-style: italic;'>Je suis Michel, chaudronnier.</strong> C'est moi qui cogne sur l'acier pour lui donner sa forme. Posez vos mains sur la pièce de métal avec moi, sentez comme ça vibre...",
+      story2: "Au chantier, <strong style='font-style: italic;'>tout était une question de précision.</strong> On travaillait le métal, mais surtout, on travaillait en équipe. Chacun avait son rôle, et il fallait que tout s’imbrique parfaitement. <strong style='font-style: italic;'>Le bruit était constant. Les marteaux, les machines, les coques en construction…</strong>",
+      story3: "On s’y habituait. <strong style='font-style: italic;'>C’était notre environnement. On apprenait sur le tas, avec les anciens. Ils nous montraient les gestes, ils corrigeaient, ils transmettaient.</strong>C’est comme ça que le métier se perpétuait. Aujourd’hui, je me dis que ce savoir là, <strong style='font-style: italic;'>c’était une richesse. Pas seulement technique, mais humaine.</strong>",
+      tip: "Maintenant que vous avez écouté le témoignage de Michel, <strong style='font-style: italic;'>je vous invite à aller voir la deuxième partie de l’exposition au fond de la salle pour découvrir les objets qu’il utilisait et vivre une expérience audio autour de ceux-ci !</strong>",
       backgroundImage: "assets/metiers/formeur.jpg"
     }
   },
 
   // Écran 18 : Clôture & fin
   closure: {
-    title: "Tu as découvert tous les métiers de <strong>Vazco</strong> !",
-    subtitle: "Vole de tes propres ailes maintenant et va explorer l’exposition et manipuler ses objets...",
+    title: "Tu as découvert tous les métiers de Vazco !",
+    subtitle: "Vole de tes propres ailes maintenant et <strong style='font-style: italic;'>va explorer l’exposition et manipuler ses objets...</strong>",
     timerLabel: "Retour au début dans"
   }
 };
