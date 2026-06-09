@@ -17,7 +17,7 @@ const APP_TEXTS = {
   // Écran 1 : Accueil / Landing
   welcome: {
     title: "Découvrez l'histoire des Chantiers Navals de Nantes et les métiers qui les ont fait vivre avec <strong>Vazco</strong> !",
-    subtitle: "Tout le texte est écrit sur les slides que vous allez faire défiler, une transcription audio est disponbile mais optionnelle et peut être activée ou désactivée à votre convenance.",
+    subtitle: "Tout le texte est écrit sur les slides que vous allez faire défiler, une transcription audio est disponible mais optionnelle et peut être activée ou désactivée à votre convenance.",
     button: "Commencer"
   },
 
@@ -77,8 +77,8 @@ const APP_TEXTS = {
     secretaire: {
       story: "Chantiers Dubigeon, bonjour ? Oui, je vous passe le bureau d’études. Ah, les bureaux... On oublie souvent que sans la paperasse, aucun bateau ne quitte Nantes ! <strong style='font-style: italic;'>Je suis Christianne, secrétaire</strong>, je m’occupe des <strong style='font-style: italic;'>commandes d'acier, des fiches de paie, des plannings de livraison…</strong> Et au-delà de mon métier, je mène une vie d’engagée depuis très jeune.",
       story2: "Le syndicat, ça fait partie de ma vie. Au début du 20e siècle, les syndicats étaient uniquement masculin. Mais petit à petit, à partir de 1920, les femmes ont commencé à les intégrer, notamment <strong style='font-style: italic;'>le syndicat des dames employées du commerce et de l’industrie.</strong>",
-      story3: "Nous, <strong style='font-style: italic;'>les femmes du pole dactylographique</strong> étions en minorité, c’était quand même un milieu d’hommes, mais cela ne nous a pas empêché de nous engager et faire entendre nos revendications. Pour les grèves de 1977, nous nous sommes même regroupées en un<strong style='font-style: italic;'>collectif d’épouses et travailleuses des chantiers</strong>, afin de soutenir le mouvement de nos époux. Nous pouvons donc affirmer avec fierté que les femmes ont eu un rôle important dans l’histoire sociale des chantiers.",
-      tip: "Maintenant que vous en savez un peu plus sur l’histoire de Christianne, <strong style='font-style: italic;'>je vous invite à aller voir le reste de l’exposition dans la zone où vous êtes actuellement.</strong>Vous en apprendrez encore plus sur le travail et la vie au chantier !",
+      story3: "Nous, <strong style='font-style: italic;'>les femmes du pôle dactylographique</strong> étions en minorité, c’était quand même un milieu d’hommes, mais cela ne nous a pas empêché de nous engager et faire entendre nos revendications. Pour les grèves de 1977, nous nous sommes même regroupées en un<strong style='font-style: italic;'> collectif d’épouses et travailleuses des chantiers</strong>, afin de soutenir le mouvement de nos époux. Nous pouvons donc affirmer avec fierté que les femmes ont eu un rôle important dans l’histoire sociale des chantiers.",
+      tip: "Maintenant que vous en savez un peu plus sur l’histoire de Christianne, <strong style='font-style: italic;'>je vous invite à aller voir le reste de l’exposition dans la zone où vous êtes actuellement. </strong>Vous en apprendrez encore plus sur le travail et la vie au chantier !",
       backgroundImage: "assets/metiers/secretaire.jpg"
     },
     soudeur: {
@@ -91,7 +91,7 @@ const APP_TEXTS = {
     chaudronnier: {
       story: "Écoutez ce boucan dans lequel on travaille... <strong style='font-style: italic;'>Je suis Michel, chaudronnier.</strong> C'est moi qui cogne sur l'acier pour lui donner sa forme. Posez vos mains sur la pièce de métal avec moi, sentez comme ça vibre...",
       story2: "Au chantier, <strong style='font-style: italic;'>tout était une question de précision.</strong> On travaillait le métal, mais surtout, on travaillait en équipe. Chacun avait son rôle, et il fallait que tout s’imbrique parfaitement. <strong style='font-style: italic;'>Le bruit était constant. Les marteaux, les machines, les coques en construction…</strong>",
-      story3: "On s’y habituait. <strong style='font-style: italic;'>C’était notre environnement. On apprenait sur le tas, avec les anciens. Ils nous montraient les gestes, ils corrigeaient, ils transmettaient.</strong>C’est comme ça que le métier se perpétuait. Aujourd’hui, je me dis que ce savoir là, <strong style='font-style: italic;'>c’était une richesse. Pas seulement technique, mais humaine.</strong>",
+      story3: "On s’y habituait. <strong style='font-style: italic;'>C’était notre environnement. On apprenait sur le tas, avec les anciens. Ils nous montraient les gestes, ils corrigeaient, ils transmettaient.</strong> C’est comme ça que le métier se perpétuait. Aujourd’hui, je me dis que ce savoir là, <strong style='font-style: italic;'>c’était une richesse. Pas seulement technique, mais humaine.</strong>",
       tip: "Maintenant que vous avez écouté le témoignage de Michel, <strong style='font-style: italic;'>je vous invite à aller voir la deuxième partie de l’exposition au fond de la salle pour découvrir les objets qu’il utilisait et vivre une expérience audio autour de ceux-ci !</strong>",
       backgroundImage: "assets/metiers/formeur.jpg"
     }
