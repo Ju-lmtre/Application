@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vazco-cache-v41';
+const CACHE_NAME = 'vazco-cache-v42';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -47,10 +47,6 @@ const ASSETS_TO_CACHE = [
   './assets/photographies/Ici, sur l’île.png',
   './assets/photographies/Mais en ces années 75-80.png',
   './assets/photographies/C’est comme cela qu’est apparu Vazco.png',
-  './assets/photographies/Capture d\'écran 2026-06-04 094844.png',
-  './assets/photographies/Capture d\'écran 2026-06-04 103323.png',
-  './assets/photographies/Capture d’écran 2026-06-03 à 16.26.29.png',
-  './assets/photographies/Capture d’écran 2026-06-04 110334.png',
   
   // Fichiers Audio (PWA Offline)
   './assets/Audios/Introduction - Narratrice & VAZCO/Intro (1).MP3',
