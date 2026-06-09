@@ -720,7 +720,7 @@ body {
 }
 
 .metier-mascot {
-  width: clamp(150px, 22vw, 240px);
+  width: clamp(240px, 22vw, 280px);
   height: clamp(240px, 50vh, 380px);
   max-height: 65vh;
   object-fit: cover;

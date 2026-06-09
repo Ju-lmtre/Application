@@ -47,7 +47,7 @@ const APP_TEXTS = {
 
   // Écran 7 : Présentation de Vazco
   vazcoIntro: {
-    title: "Bonjour à tous, moi c'est <strong>Vazco</strong>, dit Le Vaseux !",
+    title: "Bonjour à tous, moi c'est Vazco, dit Le Vaseux !",
     text: "Ne vous fiez pas à mon apparence un peu... collante ! Sous ma peau de rouille et de vase, je palpite de toute l'histoire de ce lieu.",
     button: "Découvrir l'histoire de Vazco"
   },
