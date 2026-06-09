@@ -186,10 +186,10 @@ document.addEventListener('DOMContentLoaded', () => {
     12: 'assets/Audios/Dessinateur - JeanPierre/Vazco_Jean-Pierre.wav',
 
     // Secrétaire (Story 1, 2, 3 + Outro Vazco)
-    13: 'assets/Audios/Secrétaire - Christianne/Secrétaire (1).MP3',
-    14: 'assets/Audios/Secrétaire - Christianne/Secrétaire (2).MP3',
-    15: 'assets/Audios/Secrétaire - Christianne/Secrétaire (3).MP3',
-    16: 'assets/Audios/Secrétaire - Christianne/Vazco_Christianne.wav',
+    13: 'assets/Audios/Secretaire - Christianne/Secretaire (1).MP3',
+    14: 'assets/Audios/Secretaire - Christianne/Secretaire (2).MP3',
+    15: 'assets/Audios/Secretaire - Christianne/Secretaire (3).MP3',
+    16: 'assets/Audios/Secretaire - Christianne/Vazco_Christianne.wav',
 
     // Soudeur (Story 1, 2, 3 + Outro Vazco)
     17: 'assets/Audios/Soudeur - Claude/Soudeur (1).MP3',
@@ -761,6 +761,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }, { passive: true });
+
+  // --- Sécurisation anti-zoom tactile ---
+  // Bloquer le pinch-to-zoom tactile (gestes à plus de 1 doigt)
+  document.addEventListener('touchstart', (e) => {
+    if (e.touches.length > 1) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+  // Bloquer le zoom sur iOS Safari (gestes natifs)
+  document.addEventListener('gesturestart', (e) => {
+    e.preventDefault();
+  });
 
   // --- Démarrage ---
   initTexts();

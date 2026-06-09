@@ -94,6 +94,7 @@ html {
   background-color: var(--color-bg);
   height: 100%;
   height: 100dvh;
+  touch-action: none;
 }
 
 body {
@@ -104,6 +105,7 @@ body {
   min-height: 100dvh;
   overflow: hidden;
   position: relative;
+  touch-action: none;
 }
 
 /* =========================================================
@@ -118,6 +120,7 @@ body {
   background-color: var(--color-bg);
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+  touch-action: none;
 }
 
 .tablet-viewport.fade-out {

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vazco-cache-v38';
+const CACHE_NAME = 'vazco-cache-v40';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -64,10 +64,10 @@ const ASSETS_TO_CACHE = [
   './assets/Audios/Dessinateur - JeanPierre/Dessinateur (2).MP3',
   './assets/Audios/Dessinateur - JeanPierre/Dessinateur (3).MP3',
   './assets/Audios/Dessinateur - JeanPierre/Vazco_Jean-Pierre.wav',
-  './assets/Audios/Secrétaire - Christianne/Secrétaire (1).MP3',
-  './assets/Audios/Secrétaire - Christianne/Secrétaire (2).MP3',
-  './assets/Audios/Secrétaire - Christianne/Secrétaire (3).MP3',
-  './assets/Audios/Secrétaire - Christianne/Vazco_Christianne.wav',
+  './assets/Audios/Secretaire - Christianne/Secretaire (1).MP3',
+  './assets/Audios/Secretaire - Christianne/Secretaire (2).MP3',
+  './assets/Audios/Secretaire - Christianne/Secretaire (3).MP3',
+  './assets/Audios/Secretaire - Christianne/Vazco_Christianne.wav',
   './assets/Audios/Soudeur - Claude/Soudeur (1).MP3',
   './assets/Audios/Soudeur - Claude/Soudeur (2).MP3',
   './assets/Audios/Soudeur - Claude/Soudeur (3).MP3',
