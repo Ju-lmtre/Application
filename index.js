@@ -17,17 +17,18 @@ const APP_TEXTS = {
   // Écran 1 : Accueil / Landing
   welcome: {
     title: "Découvrez l'histoire des Chantiers Navals de Nantes et les métiers qui les ont fait vivre avec <strong>Vazco</strong> !",
+    subtitle: "Tout le texte est écrit sur les slides que vous allez faire défiler, une transcription audio est disponbile mais optionnelle et peut être activée ou désactivée à votre convenance.",
     button: "Commencer"
   },
 
   // Écran 2 à 6 : Carrousel d'Introduction Historique (5 slides)
   carousel: [
     {
-      text: "Bienvenue à la Maison des Hommes et des Techniques. Ce lieu que vous visitez aujourd'hui a été créé en 1994 par les anciens travailleurs des chantiers navals eux-mêmes, portés par des années de réflexion et d'engagement pour sauvegarder leur histoire. Vous vous apprêtez à découvrir l'exposition permanente <strong>Bâtisseurs de navires</strong>, installée au cœur même des anciens bureaux administratifs de l'entreprise Dubigeon.\n\nC'est ici, entre ces murs, que battait le cœur stratégique du chantier...",
+      text: "<strong>Bienvenue à la Maison des Hommes et des Techniques</strong>. Ce lieu que vous visitez aujourd'hui a été créé en 1994 par les anciens travailleurs des chantiers navals eux-mêmes, portés par des années de réflexion et d'engagement pour sauvegarder leur histoire. Vous vous apprêtez à découvrir l'exposition permanente <strong>Bâtisseurs de navires</strong>, installée au cœur même des anciens bureaux administratifs de l'entreprise Dubigeon.\n\nC'est ici, entre ces murs, que battait le cœur stratégique du chantier...",
       image: "assets/photographies/Bienvenue.png"
     },
     {
-      text: "Nantes, fin des années 70. Si vous tendez l’oreille, la ville ne sonne pas du tout comme aujourd’hui. À cette époque, le cœur de Nantes bat au rythme de l’acier. Un battement lourd, puissant, qui résonne de la place du Commerce jusqu’aux ruelles de Chantenay.",
+      text: "<strong>Nantes, fin des années 70.</strong> Si vous tendez l’oreille, la ville ne sonne pas du tout comme aujourd’hui. À cette époque, le cœur de Nantes bat au rythme de l’acier. Un battement lourd, puissant, qui résonne de la place du Commerce jusqu’aux ruelles de Chantenay.",
       image: "assets/photographies/Nantes, fin des années 70.png"
     },
     {
@@ -115,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Accueil
   const txtWelcomeTitle = document.getElementById('txt-welcome-title');
+  const txtWelcomeSubtitle = document.getElementById('txt-welcome-subtitle');
   const txtWelcomeBtn = document.getElementById('txt-welcome-btn');
   const btnStart = document.getElementById('btn-start');
 
@@ -309,6 +311,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Initialisation dynamique des textes ---
   function initTexts() {
     txtWelcomeTitle.innerHTML = APP_TEXTS.welcome.title;
+    if (txtWelcomeSubtitle) {
+      txtWelcomeSubtitle.innerHTML = APP_TEXTS.welcome.subtitle;
+    }
     txtWelcomeBtn.textContent = APP_TEXTS.welcome.button;
 
     txtVazcoIntroTitle.innerHTML = APP_TEXTS.vazcoIntro.title;
@@ -743,7 +748,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       } else {
         // Geste vers la droite (Swipe droite) -> Écran précédent
-        const prevBtn = activeSlideEl.querySelector('.prev-arrow, .btn-back, #btn-back-vazco-intro, #btn-back-vazco-meta');
+        let prevBtn = activeSlideEl.querySelector('.prev-arrow');
+        if (!prevBtn) {
+          prevBtn = activeSlideEl.querySelector('.btn-back, #btn-back-vazco-intro, #btn-back-vazco-meta');
+        }
         if (prevBtn && !prevBtn.disabled && prevBtn.style.display !== 'none' && prevBtn.style.opacity !== '0') {
           const target = parseInt(prevBtn.getAttribute('data-target'));
           if (isSwipeAllowed(currentSlide, target)) {

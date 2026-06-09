@@ -62,6 +62,23 @@
   --slide-padding-y: clamp(15px, 3.5vh, 30px);
 }
 
+.welcome-slide,
+.intro-vazco-slide,
+.meta-vazco-slide,
+.closure-slide {
+  --slide-padding-x: 80px;
+}
+
+.welcome-slide .home-title,
+.welcome-slide .story-paragraph,
+.intro-vazco-slide .story-title,
+.intro-vazco-slide .story-paragraph,
+.closure-slide .story-title,
+.closure-slide .story-paragraph,
+.closure-slide .inactivity-timer-container {
+  margin-bottom: 48px !important;
+}
+
 /* =========================================================
    RESET & CONFIGURATION BASE
    ========================================================= */
@@ -164,8 +181,9 @@ body {
    ========================================================= */
 .home-title,
 .intro-vazco-slide .story-title,
-.menu-title {
-  font-size: clamp(32px, 6vh, 64px) !important;
+.menu-title,
+.closure-slide .story-title {
+  font-size: clamp(32px, 6vh, 56px) !important;
   line-height: 1.1;
   font-family: var(--font-title);
   color: var(--color-text);

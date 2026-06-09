@@ -36,9 +36,10 @@
           <div class="text-column">
             <!-- Ce titre sera mis à jour par JavaScript depuis la config de textes -->
             <h1 id="txt-welcome-title" class="home-title">Découvrez l'histoire des chantiers naval de Nantes...</h1>
+            <p id="txt-welcome-subtitle" class="story-paragraph"></p>
 
             <div class="action-container">
-              <button class="btn-action-primary" id="btn-start">
+              <button class="btn-action-primary" id="btn-start" data-target="1">
                 <span id="txt-welcome-btn">Commencer</span>
                 <img src="assets/icons/chevron_right.svg" class="btn-arrow-img" alt="Suivant">
               </button>
@@ -67,6 +68,7 @@
            ÉCRAN 7 : PRÉSENTATION DE VAZCO
            ========================================================= -->
       <section class="slide intro-vazco-slide" id="slide-6">
+        <div class="sound-indicator"></div>
         <div class="slide-content grid-two-columns">
 
           <!-- Bouton Retour marron capsule transparente -->
@@ -80,7 +82,7 @@
             <p id="txt-vazco-intro-text" class="story-paragraph">Sous ma peau de rouille...</p>
 
             <div class="action-container">
-              <button class="btn-action-primary" id="btn-vazco-next">
+              <button class="btn-action-primary" id="btn-vazco-next" data-target="7">
                 <span id="txt-vazco-intro-btn">Découvrir l'histoire de Vazco</span>
                 <img src="assets/icons/chevron_right.svg" class="btn-arrow-img" alt="Suivant">
               </button>
@@ -98,6 +100,7 @@
            ÉCRAN 8 : MÉTAMORPHOSE / TRANSITION VAZCO FLAQUE
            ========================================================= -->
       <section class="slide meta-vazco-slide" id="slide-7">
+        <div class="sound-indicator"></div>
         <div class="slide-content">
 
           <!-- Bouton Retour marron capsule transparente -->
