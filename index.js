@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     13: 'assets/Audios/Secretaire - Christianne/Secretaire (1).MP3',
     14: 'assets/Audios/Secretaire - Christianne/Secretaire (2).MP3',
     15: 'assets/Audios/Secretaire - Christianne/Secretaire (3).MP3',
-    16: 'assets/Audios/Secretaire - Christianne/Vazco_Christianne.wav',
+    16: 'assets/Audios/Secretaire - Christianne/Vazco_Secretaire.wav',
 
     // Soudeur (Story 1, 2, 3 + Outro Vazco)
     17: 'assets/Audios/Soudeur - Claude/Soudeur (1).MP3',
