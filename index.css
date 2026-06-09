@@ -209,7 +209,7 @@ body {
 
 .story-paragraph {
   font-family: var(--font-body);
-  font-size: clamp(1.1rem, 2.2vh, 1.4rem);
+  font-size: 28px !important;
   line-height: 1.5;
   color: var(--color-text);
   margin-bottom: clamp(0.8rem, 2vh, 1.5rem);
@@ -497,7 +497,7 @@ body {
    ÉCRAN TRANSITION FLAQUE (SLIDE 7)
    ========================================================= */
 #slide-7 .story-paragraph {
-  font-size: clamp(1.1rem, 2.2vh, 1.4rem) !important;
+  font-size: 28px !important;
   line-height: 1.45;
 }
 
@@ -761,7 +761,7 @@ body {
 
 .speech-bubble p {
   font-family: var(--font-body);
-  font-size: clamp(1.1rem, 2.2vh, 1.4rem);
+  font-size: 28px !important;
   line-height: 1.45;
   color: var(--color-text);
   font-weight: 400;
